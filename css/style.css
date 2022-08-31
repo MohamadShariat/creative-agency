@@ -164,3 +164,24 @@ main {
   right: 0;
   height: 110%;
 }
+
+/* Media queries */
+@media (max-width: 1060px) {
+  .home-img {
+    display: none;
+  }
+
+  .logo {
+    top: 10px;
+    left: 40px;
+    font-size: 2rem;
+  }
+
+  .home {
+    padding: 100px 40px;
+  }
+
+  .navigation ul li a {
+    font-size: 2.5rem;
+  }
+}
