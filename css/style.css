@@ -23,6 +23,11 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
 p,
 a {
   font-size: 1.8rem;
@@ -34,9 +39,16 @@ p {
 
 main {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   align-items: center;
   padding: 100px;
+  margin-top: 60px;
+}
+
+main.home {
+  flex-direction: row;
+  margin-top: 0;
 }
 
 /* Button */
@@ -177,7 +189,7 @@ main {
     font-size: 2rem;
   }
 
-  .home {
+  main {
     padding: 100px 40px;
   }
 
