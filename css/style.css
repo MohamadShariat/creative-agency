@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #f60f20;
+  --secondary-color: #1b206e;
 }
 
 /* Base Styles */
@@ -308,7 +309,7 @@ main.home {
 }
 
 .contact-form .row input[type='submit'] {
-  background-color: #1b206e;
+  background-color: var(--secondary-color);
   color: #fff;
   margin: 0;
   text-transform: uppercase;
@@ -316,6 +317,33 @@ main.home {
   font-weight: 300;
   border: 0;
   cursor: pointer;
+}
+
+.contact-info {
+  width: 350px;
+  background: #f9f9f9;
+  padding: 60px 40px 20px;
+}
+
+.contact-info .info-box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.contact-info .info-box .contact-icon {
+  width: 20px;
+  margin-right: 40px;
+}
+
+.contact-info .info-box .details h4 {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+.contact-info .info-box .details p,
+.contact-info .info-box .details a {
+  color: #111;
 }
 
 /* Media queries */
