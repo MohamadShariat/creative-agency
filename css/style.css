@@ -323,6 +323,7 @@ main.home {
   width: 350px;
   background: #f9f9f9;
   padding: 60px 40px 20px;
+  align-self: stretch;
 }
 
 .contact-info .info-box {
@@ -344,6 +345,7 @@ main.home {
 .contact-info .info-box .details p,
 .contact-info .info-box .details a {
   color: #111;
+  font-size: 12px;
 }
 
 /* Media queries */
@@ -368,6 +370,31 @@ main.home {
 
   .services {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 30px 30px 20px;
+  }
+
+  .contact-form .row {
+    flex-direction: column;
+  }
+
+  .contact-form .input50,
+  .contact-form .input100 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin-top: 20px;
+    padding: 30px 30px 20px;
   }
 }
 
